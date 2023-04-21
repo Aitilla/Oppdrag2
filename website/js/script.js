@@ -8,7 +8,7 @@ let currentIndex = 0;
 console.log(currentIndex);
 
 // Bruker en addEventListener istedet for onclick for å endre på nettsiden til tilsvarende farge
-changeColor.addEventListener('click', function() {
+changeColor.addEventListener('click', function () {
     bodyColor.classList.remove(classes[currentIndex]);
     currentIndex = (currentIndex + 1) % classes.length;
     bodyColor.classList.add(classes[currentIndex]);
@@ -21,16 +21,16 @@ const optDiv = document.getElementById("optDiv");
 const ulEl = document.createElement("ul");
 const textarea = document.getElementById('textarea');
 // Logger alt som blir skrevet
-textarea.addEventListener('input', function() {
+textarea.addEventListener('input', function () {
     console.log(textarea.value);
 });
 
 // Legger til alt som blir skrevet i textarea
 const addText = document.getElementById('addText');
-addText.addEventListener('click', function() {
-    if (textarea.value === ''){
+addText.addEventListener('click', function () {
+    if (textarea.value === '') {
         console.log('Invalid input');
-    }else {
+    } else {
         console.log('Added:', textarea.value);
         optDiv.appendChild(ulEl);
         const liEl = document.createElement("li");
@@ -39,10 +39,16 @@ addText.addEventListener('click', function() {
         ulEl.appendChild(liEl);
         liEl.appendChild(buttonEl);
         buttonEl.innerHTML = 'Remove';
-        buttonEl.addEventListener('click', function() {
+        buttonEl.addEventListener('click', function () {
             liEl.removeChild(buttonEl);
             ulEl.removeChild(liEl);
             console.log('Removed:', liEl.innerHTML);
         });
-        }
+    }
+});
+
+const submit = document.getElementById('submit');
+
+submit.addEventListener('click', function () {
+    console.log('Submitted:');
 });

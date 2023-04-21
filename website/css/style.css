@@ -1,27 +1,56 @@
 .default {
-    background-color: #FFFFFF; /* white */
-    color: #000000; /* black */
+    background-color: #FFFFFF;
+    /* white */
+    color: #000000;
+    /* black */
 }
 
 .protanopia {
-    background-color: #F5F5DC; /* beige */
-    color: #800000; /* maroon */
+    background-color: #F5F5DC;
+    /* beige */
+    color: #800000;
+    /* maroon */
 }
 
 .deuteranopia {
-    background-color: #E0FFFF; /* light cyan */
-    color: #8B0000; /* dark red */
+    background-color: #E0FFFF;
+    /* light cyan */
+    color: #8B0000;
+    /* dark red */
 }
 
 .tritanopia {
-    background-color: #F0FFF0; /* honeydew */
-    color: #00008B; /* dark blue */
+    background-color: #F0FFF0;
+    /* honeydew */
+    color: #00008B;
+    /* dark blue */
 }
 
-div{
-    border: 2px solid black;
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.optDiv{
-    
+#colorDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 5px;
+}
+
+#optDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#textarea {
+    width: 50%;
 }
