@@ -46,9 +46,3 @@ addText.addEventListener('click', function () {
         });
     }
 });
-
-const submit = document.getElementById('submit');
-
-submit.addEventListener('click', function () {
-    console.log('Submitted:');
-});
